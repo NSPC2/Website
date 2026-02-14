@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #05050e;
+    padding-top: 55px;
+    background-image: url(background.png);
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #060612;
+    box-shadow: 0px 2px 2px white;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#logo {
+    display: inline-block;
+    font-size: 40px;
+    background: linear-gradient(170deg, white, #00ffcc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#menu1 {
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 50px;
+    align-content: center;
+    margin-right: 40px;
+}
+
+#menu1 button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline-style: none;
+    font-size: 18px;
+    height: 30px;
+    margin: 0px 10px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#menu1 button:hover {
+    border-bottom: 2px solid #00ffcc;
+}
+
+#menu2,
+#dropdownicon {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    #menu1 {
+        display: none;
+    }
+
+    #menu2,
+    #dropdownicon {
+        display: inline-block;
+    }
+
+    #dropdownicon {
+        color: white;
+        position: fixed;
+        font-size: 23px;
+        right: 20px;
+        top: 18px;
+        cursor: pointer;
+    }
+
+    #menu2 {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 100%;
+        top: 0;
+        background-color: #050913;
+        z-index: 2;
+        transition: 0.5s;
+        text-align: center;
+        align-content: center;
+        box-shadow: inset 0px 0px 10px #00ffcc;
+    }
+
+    #menu2 button {
+        font-size: 20px;
+        margin: 10px 0px;
+        border: none;
+        outline-style: none;
+        background-color: transparent;
+        color: transparent;
+        font-weight: 900;
+        background: linear-gradient(170deg, white, #00ffcc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-bottom: 2px solid transparent;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+
+    #menu2 button:hover {
+        border-bottom: 2px solid #00ffcc;
+    }
+
+}
+
+
+
+#homebox {
+    display: inline-block;
+    color: white;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+#homebox #top{
+    width: 100%;
+    height: 550px;
+    background-image: url(background.png);
+    align-content: center; 
+}
+hr{
+    border: none;
+    height: 3px;
+    background-color: #00ffcc;
+    border-radius: 100%;
+    margin: 5px 0px;
+}
+#homebox h3{
+     background: linear-gradient(170deg, white, #00ffcc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+#hp{
+    width: 300px;
+    display: inline-block;
+    margin-left: 15%;
+    margin-top: 100px;
+}
+#homebox #top img{
+    width: 400px;
+    float: right;
+    margin-right: 5%;
+}
+#homebox #start{
+    background: linear-gradient(#2ed78e,#1a5038);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    outline-style: none;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#homebox #start:hover{
+    font-size: 18px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0,0.4);
+    background: linear-gradient(#32e195,#28a46c);
+    box-shadow: 0px 0px 10px #32e195;
+}
+#homebox #bottom{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #05050e;
+    padding-bottom: 100px;
+}
+#homebox #bottom img{
+    width: 270px;
+    margin: 30px;
+}
+@media screen and (max-width: 900px){
+    #homebox #hp{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+    #homebox img{
+    width: 300px;
+    margin-top: 30px;
+}
+}
+@media screen and (max-width: 450px){
+    #homebox #hp{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+    #homebox #top img{
+    width: 300px;
+    margin-top: 30px;
+}
+}
+
+
+
+
+
+#aboutbox {
+    display: none;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 100px;
+    text-align: center;
+    overflow: auto;
+}
+#aboutbox img{
+    width: 400px;
+}
+#aboutbox #aboutp{
+    text-align: left;
+    display: inline-block;
+    margin-top: 50px;
+    padding: 0px 10%;
+}
+#aboutbox h2{
+    display: inline-block;
+     background: linear-gradient(170deg, white, #00ffcc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+#aboutbox img{
+   margin-top: 50px; 
+   width: 300px;
+}
+
+
+
+
+
+#projectbox {
+    display: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+#projectbox h2{
+    margin-top: 30px;
+    display: inline-block;
+     background: linear-gradient(170deg, white, #00ffcc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+#projectbox hr{
+    width: 300px;
+    display: inline-block;
+}
+#projectbox #projects{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 5%;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00ffcc;
+    background-color: black;
+    transition: 0.3s;
+}
+#projectbox #projects:hover{
+    box-shadow: 0px 0px 20px #00ffcc;
+    transform: translate(0, -10px);
+}
+#projectbox #projects h3{
+    color: white;
+    margin: 10px 0px;
+    text-shadow: 2px 2px 2px #00ffcc;
+}
+#projectbox #projects div{
+    height: 200px;
+    align-content: center;
+    overflow: hidden;
+}
+#projectbox #projects img{
+    width: 250px;
+}
+#projectbox #projects a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+#projectbox #projects a:hover{
+    border-bottom: 2px solid #00ffcc;
+}
+
+#contactbox {
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 100px;
+}
+#contactbox h2{
+    margin-top: 30px;
+    display: inline-block;
+     background: linear-gradient(170deg, white, #00ffcc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+#contactbox hr{
+    width: 300px;
+    display: inline-block;
+    margin-bottom: 100px;
+}
+#contactbox button{
+    margin: 10px 0px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline-style: none;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px 15px;
+    box-shadow: 0px 0px 5px #00ffcc;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px #00ffcc;
+    transition: 0.3s;
+}
+#contactbox button:hover{
+    transform: translate(0,-10px);
+    box-shadow: 0px 0px 10px #00ffcc;
+    font-size: 20px;
+}
